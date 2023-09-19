@@ -6,10 +6,10 @@ import javax.validation.constraints.Size;
 
 public class UserInfoDto {
 	@NotBlank(message = "{user.notBlank}")
-	@Size(min = 3, max = 15, message = "{userName.size}")
+	@Size(min = 3, max = 30, message = "{userName.size}")
 	private String userName;
 	@NotBlank(message = "*crushname cannot be blank")
-	@Size(min = 3, max = 15, message = "*should be between 3-15")
+	@Size(min = 3, max = 30, message = "*should be between 3-15")
 	private String crushName;
 	@AssertTrue(message = "*Please check to use our app")
 	private boolean checkTermsAndConditions;

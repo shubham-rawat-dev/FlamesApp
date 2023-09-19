@@ -25,18 +25,23 @@ public class EmailController {
 	@RequestMapping("/processEmail")
 	public String processEmail(@ModelAttribute("emailDto") EmailDto emailDto, HttpSession session, Model model) {
 		String result = (String) session.getAttribute("appResult");
+		String userName = (String) session.getAttribute("userName");
+		String crushName = (String) session.getAttribute("crushName");
+		
+		String newUserName = "Mr " + userName;
+		
+		model.addAttribute("userName", newUserName);
+	
 
-		String message = "<div style='border:1px solid #e2e2e2;padding:20px;'>" + "<h1>" + "Result of Flames app is "
-				+ "<b>" + result + "</b>" + "</n>" + "</h1>" + "</div>";
+		String message = "<div style='border:2px solid #e2e2e2;padding:20px;'>" + "<h1>" + "Result of Flames app:\n "
+				+ "<b>" +userName+" and "+crushName+" are\n"+ result + "</b>" + "</n>" + "</h1>" + "</div>";
 		String userEmail = emailDto.getUserEmail();
 		boolean flag = emailService.sendEmail("Flames App", message, userEmail);
 		if (flag)
 			System.out.println("sent");
 		else
 			System.out.println("failed");
-		String userName = (String) session.getAttribute("userName");
-		String newUserName = "Mr " + userName;
-		model.addAttribute("userName", newUserName);
+		
 
 		return "process-email-page";
 

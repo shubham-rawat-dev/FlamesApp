@@ -9,8 +9,10 @@ public class FlamesAppServiceImp implements FlamesAppService {
 	@Override
 
 	public String calculateResult(String userName, String crushName) {
-
+		System.out.println(userName);
+		System.out.println(crushName);
 		int userNameAndCrushNameCount = (userName + crushName).length();
+		System.out.println("total"+userNameAndCrushNameCount);
 		int formulaCount = FLAMES_APP_FORMULA.length();
 		System.out.println("Flames len=" + formulaCount);
 		int remainder = userNameAndCrushNameCount % formulaCount;
