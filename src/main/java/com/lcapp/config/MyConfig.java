@@ -10,6 +10,8 @@ import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -79,6 +81,11 @@ public class MyConfig implements WebMvcConfigurer {
 	@Override
 	public Validator getValidator() {
 		return validator();
+	}
+	@Bean
+	PasswordEncoder getPasswordEncoder()
+	{
+		return new BCryptPasswordEncoder();
 	}
 
 }

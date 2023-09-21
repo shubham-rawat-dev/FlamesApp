@@ -7,11 +7,12 @@ import com.lcapp.validator.Age;
 public class UserRegistrationDto {
 	@NotEmpty(message = "{string.notEmpty}")
 	private String name;
-	private String userName;
-	private char[] password;
+	private String username;
+	private String password;
 	private String countryName;
 	private String[] hobbies;
 	private String gender;
+	private boolean enabled;
 	@Age(lower = 23, upper = 45)
 	private Integer age;
 
@@ -65,20 +66,32 @@ public class UserRegistrationDto {
 		this.name = name;
 	}
 
-	public String getUserName() {
-		return userName;
-	}
+	
 
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
-	public char[] getPassword() {
+	public String getPassword() {
 		return password;
 	}
 
-	public void setPassword(char[] password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
+
+
 
 }

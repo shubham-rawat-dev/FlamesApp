@@ -6,10 +6,14 @@ C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\service\
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\UserRegistrationDto.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\propertyEditors\CustomCurrencyEditor.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\customValidators\EmailValidator.java
+C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dao\FlamesResultDao.java
+C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dao\RowMapperImpl.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\formatters\CreditCardformatter.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\converters\CreditCardConverterObjectToString.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\customValidators\UserNameValidator.java
+C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\propertyEditors\UserAndCrushNameEditor.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\UserInfoDto.java
+C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\FlamesAppHistory.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\service\EmailService.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\controllers\BillController.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\CreditCard.java
@@ -17,6 +21,8 @@ C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\controll
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\BillDto.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\formatters\PhoneNumberFormatter.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\service\FlamesAppService.java
+C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dao\FlamesResultDaoImpl.java
+C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\config\SecurityInitializer.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\CommunicationDto.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\service\FlamesAppConstants.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\converters\CreditCardConverter.java
@@ -24,5 +30,6 @@ C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\validato
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\EmailDto.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\config\LcAppInitializer.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\controllers\UserRegistrationController.java
+C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\config\SpringSecurityConfig.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\propertyEditors\NamePropertyEditor.java
 C:\Users\dell\Desktop\LcAppCalculator\FlamesApp\src\main\java\com\lcapp\dto\Phone.java
