@@ -36,7 +36,7 @@ background:#e2e2e2!important;
 						href="${pageContext.request.contextPath}/register">Register
 							Here</a></li>
 							<li class="nav-item"><a class="nav-link"
-						href="${pageContext.request.contextPath}/about">About App
+						href="${pageContext.request.contextPath}/viewAppHistory">App History
 							</a></li>
 					
 				</ul>

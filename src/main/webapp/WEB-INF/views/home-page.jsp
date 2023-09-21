@@ -40,7 +40,7 @@
 					<label class="form-label" for="yn">Your Name:</label>
 					<form:input class="form-input" id="yn" path="userName" />
 					<form:errors cssClass="error" path="userName"></form:errors>
-				</p>
+				</p>	
 				<p>
 					<label class="form-label" for="cn">Crush Name:</label>
 					<form:input class="form-input" path="crushName" id="cn" />

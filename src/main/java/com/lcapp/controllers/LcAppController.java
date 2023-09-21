@@ -57,8 +57,8 @@ public class LcAppController {
 		}
 		String appResult = flamesAppServiceImp.calculateResult(userInfo.getUserName().trim(), userInfo.getCrushName().trim());
 		session.setAttribute("appResult", appResult);
-		flamesAppHistory.setUserName(userInfo.getUserName());
-		flamesAppHistory.setCrushName(userInfo.getCrushName());
+		flamesAppHistory.setUserName(userInfo.getUserName().trim());
+		flamesAppHistory.setCrushName(userInfo.getCrushName().trim());
 		flamesAppHistory.setAppResult(appResult);
 		flamesResultDao.insert(flamesAppHistory);
 //	Cookie ck=new Cookie("appUserName",userInfo.getUserName());

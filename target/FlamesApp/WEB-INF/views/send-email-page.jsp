@@ -1,8 +1,8 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ include file="base.jsp"%>
+	pageEncoding="ISO-8859-1" %>
+<%@ include file="base.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>

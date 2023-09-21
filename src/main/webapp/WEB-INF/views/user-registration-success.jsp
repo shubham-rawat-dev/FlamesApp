@@ -10,7 +10,7 @@
 <body>
 	<h1>Your Registration is successful</h1>
 	Name:${userReg.name}
-	<br /> User Name:${userReg.userName}
+	<br /> User Name:${userReg.username}
 	<br /> Password:${userReg.password}
 	<br /> Country:${userReg.countryName}
 	<br /> Hobbies:

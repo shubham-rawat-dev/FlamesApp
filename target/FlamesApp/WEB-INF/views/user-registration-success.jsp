@@ -1,6 +1,6 @@
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,9 +8,9 @@
 <title>Success</title>
 </head>
 <body>
-	<h1>Your Registration is successfull</h1>
+	<h1>Your Registration is successful</h1>
 	Name:${userReg.name}
-	<br /> User Name:${userReg.userName}
+	<br /> User Name:${userReg.username}
 	<br /> Password:${userReg.password}
 	<br /> Country:${userReg.countryName}
 	<br /> Hobbies:

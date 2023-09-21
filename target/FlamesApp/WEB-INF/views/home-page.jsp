@@ -29,9 +29,9 @@
 </script>
 
 </head>
-<body >
+<body>
 	<h1 align="center">Flames App</h1>
-	<hr />
+	<hr/>
 	<div class="container-fluid mt-5 clip ">
 		<form:form action="processHomepage" method="get"
 			modelAttribute="userInfo">

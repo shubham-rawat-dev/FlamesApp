@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.lcapp.customValidators.EmailValidator;
 import com.lcapp.customValidators.UserNameValidator;
+import com.lcapp.dao.FlamesResultDaoImpl;
 import com.lcapp.dto.CommunicationDto;
 import com.lcapp.dto.Phone;
 import com.lcapp.dto.UserRegistrationDto;
@@ -22,7 +24,8 @@ import com.lcapp.propertyEditors.NamePropertyEditor;
 
 @Controller
 public class UserRegistrationController {
-
+@Autowired
+FlamesResultDaoImpl repo;
 	@RequestMapping("/register")
 	public String showUserRegPage(@ModelAttribute("userReg") UserRegistrationDto userRegistrationDto) {
 		Phone phone = new Phone();
@@ -43,6 +46,10 @@ public class UserRegistrationController {
 			allErrors.forEach(System.out::println);
 			return "user-registration-page";
 		}
+		
+		System.out.println(userRegistrationDto.getUsername());
+		repo.insertUserName(userRegistrationDto);
+		
 		return "user-registration-success";
 	}
 

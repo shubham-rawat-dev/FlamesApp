@@ -27,8 +27,8 @@
 			</p>
 			<p>
 				<label for="userName">UserName:</label>
-				<form:input id="userName" path="userName" />
-				<form:errors path="userName" cssClass="error"></form:errors>
+				<form:input id="userName" path="username" />
+				<form:errors path="username" cssClass="error"></form:errors>
 			</p>
 			<p>
 				<label for="pwd">Password:</label>
@@ -67,6 +67,13 @@
 				<form:radiobutton path="gender" value="male" />
 				Female:
 				<form:radiobutton path="gender" value="female" />
+			</p>
+				<p>
+				<label>Account Enabled</label> True
+				<form:radiobutton path="enabled" value="true" />
+				False:
+				<form:radiobutton path="enabled" value="false" />
+				
 			</p>
 
 			<div align="center">

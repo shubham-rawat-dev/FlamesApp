@@ -23,6 +23,8 @@
 						<span class="text-end"><a
 							href="${pageContext.request.contextPath}/sendEmail">Send
 								Result to Your Email</a></span>
+								<span class="text-end"><a
+									href="${pageContext.request.contextPath}/viewAppHistory">Show App History</a></span>
 
 					</div>
 

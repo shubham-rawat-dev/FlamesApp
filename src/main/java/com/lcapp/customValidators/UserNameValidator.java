@@ -17,11 +17,11 @@ public class UserNameValidator implements Validator {
 	@Override
 	public void validate(Object target, Errors errors) {
 		// check if field is null
-		ValidationUtils.rejectIfEmpty(errors, "userName", "userName.empty", "*User Name cannot be empty");
+		ValidationUtils.rejectIfEmpty(errors, "username", "userName.empty", "*User Name cannot be empty");
 		// string should contain a _
-		String userName = ((UserRegistrationDto) target).getUserName();
+		String userName = ((UserRegistrationDto) target).getUsername();
 		if (!userName.contains("_"))
-			errors.rejectValue("userName", "userName.errorCode", "*String must contain an underscore(_)");
+			errors.rejectValue("username", "userName.errorCode", "*String must contain an underscore(_)");
 	}
 
 }

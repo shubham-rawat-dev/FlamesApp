@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 
 <!DOCTYPE html>
@@ -40,6 +41,13 @@ background:#e2e2e2!important;
 							</a></li>
 					
 				</ul>
+				<div class="text-end">
+				
+						
+							<form:form action="logout" method="post">
+						<input class="input-group-text" type="submit" value="LogOut"/>
+							</form:form>
+				</div>
 			
 			</div>
 		</div>
